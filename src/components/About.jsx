@@ -19,7 +19,7 @@ const ServiceCard = ({ index, title, icon }) => (
           scale: 1,
           speed: 450,
         }}
-        className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
+        className="bg-[#d4becc] rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
       >
         <img
           src={icon}
@@ -27,7 +27,7 @@ const ServiceCard = ({ index, title, icon }) => (
           className="w-16 h-16 object-contain"
         />
 
-        <h3 className="text-white text-[20px] font-bold text-center">
+        <h3 className="text-[#7d5782] text-[20px] font-bold text-center">
           {title}
         </h3>
       </div>
@@ -45,7 +45,7 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+        className="mt-4 text-[#7d5782] text-[20px] max-w-3xl leading-[30px]"
       >
         A new graduate of the Software Engineering Technician program, skilled
         in strong software development and programming. Detail-oriented strong
