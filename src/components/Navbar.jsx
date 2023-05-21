@@ -9,7 +9,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState("false");
   return (
     <nav
-      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary `}
+      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-[#ffffff] `}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
@@ -21,13 +21,13 @@ const Navbar = () => {
           }}
         >
           <img
-            src="mia-logo1.png"
+            src="mialogo.png"
             alt={logo}
             className="miaLogo"
-            style={{ height: 40, width: 40 }}
+            style={{ height: 45, width: 45 }}
           />
-          <p className="text-[#fac8af] text-[18px] font-bold cursor-pointer">
-            Mingyue Guo <span> | Software Developer & Front-end Developer</span>
+          <p className="text-[#7d5782] text-[20px] font-bold cursor-pointer">
+            <span> Software Developer & Front-end Developer</span>
           </p>
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10">
@@ -35,8 +35,8 @@ const Navbar = () => {
             <li
               key={link.id}
               className={`${
-                active === link.title ? "text-[#fac8af]" : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
+                active === link.title ? "text-[#7d5782]" : "text-[#7d5782]"
+              } hover:text-[#282329] text-[20px] font-bold cursor-pointer`}
               onClick={() => setActive(link.title)}
             >
               <a href={`#${link.id}`}>{link.title}</a>
