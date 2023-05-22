@@ -1,7 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
+import { Link } from "react-router-dom";
 import { ComputersCanvas } from "./canvas";
+
 const Hero = () => {
   return (
     <section className="relative w-full h-screen mx-auto">
@@ -11,7 +13,6 @@ const Hero = () => {
       >
         <div className="flex flex-col justify-center items-center mt-5">
           <div className="w-5 h-5 rounded-full bg-[#c78baa]" />
-          {/* <div className="w-1 sm:h-80 h-40 violet-gradient" /> */}
           <div className="w-1 sm:h-80 h-40 bg-gradient-to-tr from-[#f0bddc] to-[#401830] opacity-50" />
         </div>
         <div>
@@ -20,20 +21,32 @@ const Hero = () => {
             <br /> I'm Mingyue(Mia) Guo
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-whit-100`}>
-            Software Developer & Front-End Developer
-          </p>
+            Software Developer & Front-End Developer{" "}
+          </p>{" "}
+          <br></br>
+          <Link to="https://www.linkedin.com/in/mingyue-guo-416ab7255/">
+            <button type="button" className="btn btn-info">
+              <img src="linkedin.png" className="h-[35px]" />
+            </button>
+          </Link>
+          &nbsp;&nbsp;
+          <Link to="https://github.com/Mia-Guoo/">
+            <button type="button" className="btn btn-info">
+              <img src="github.png" className="h-[35px]" />
+            </button>
+          </Link>
         </div>
-      </div>
-      <ComputersCanvas />
-      {/* Personal Image */}
-      {/* <div className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]">
+        <div className="flex-1 bg-about bg-contain bg-no-repeat opacity-90">
           <img
-            src="Mia.png"
-            alt="logo"
+            src="Mia1.png"
+            alt="miaphoto"
             className="miaLogo"
-            style={{ height: 450 }}
+            style={{ height: 300 }}
           />
-        </div> */}
+        </div>
+        <div></div>
+      </div>
+      {/* <ComputersCanvas /> */}
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-[#634358] flex justify-center items-start p-2">
