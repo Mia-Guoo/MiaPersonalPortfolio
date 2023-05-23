@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { logo, menu, close } from "../assets";
+import { menu, close } from "../assets";
 
 const Navbar = () => {
   const [active, setActive] = useState(" ");
@@ -22,12 +22,12 @@ const Navbar = () => {
         >
           <img
             src="mialogo.png"
-            alt={logo}
+            alt="mialogo"
             className="miaLogo"
             style={{ height: 45, width: 45 }}
           />
           <p className="text-[#7d5782] text-[20px] font-bold cursor-pointer">
-            <span> Software Developer & Front-end Developer</span>
+            <span>Software Developer</span>
           </p>
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10">
@@ -46,7 +46,7 @@ const Navbar = () => {
 
         <div className="sm:hidden flex flex-1 justify-end items-center">
           <img
-            src={toggle ? menu : close}
+            src={toggle ? close : menu}
             alt="menu"
             className="w-[28px] h-[28px] object-contain cursor-pointer"
             onClick={() => setToggle(!toggle)}
@@ -61,7 +61,7 @@ const Navbar = () => {
                 <li
                   key={link.id}
                   className={`${
-                    active === link.title ? "text-whilt" : "text-secondary"
+                    active === link.title ? "text-white" : "text-secondary"
                   } font-poppins font-medium cursor-pointer text-[16px]`}
                   onClick={() => {
                     setToggle(!toggle);

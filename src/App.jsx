@@ -14,15 +14,17 @@ import {
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="relative z-0  bg-gradient-to-tr from-[#ededda] to-[#a87e9f] opacity-90">
+      {/* <div className="relative z-0  bg-gradient-to-tr from-[#ededda] to-[#a87e9f] opacity-90"> */}
+      <div className="relative z-0  bg-gradient-to-tr from-[#beabc7] to-[#f0f4f5] opacity-90">
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
           <Navbar />
           <Hero />
         </div>
         <About />
-        <Experience />
-        <Tech />
         <Works />
+        <Tech />
+        <Experience />
+
         <div className="relative z-0">
           <Contact />
           <StarsCanvas />
