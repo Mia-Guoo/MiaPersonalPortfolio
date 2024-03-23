@@ -72,7 +72,9 @@ const Works = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} `}>My work</p>
-        <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
+        <h3 style={{ color: "black", fontWeight: "500", fontSize: "36px" }}>
+          Projects.
+        </h3>
       </motion.div>
 
       <div className="w-full flex">
@@ -81,8 +83,7 @@ const Works = () => {
           className="mt-3 text-[#7d5782] text-[17px] max-w-3xl leading-[30px]"
         >
           The following projects showcase my skills and experience through
-          real-world examples of my work. Each project is briefly described with
-          links to code repositories.
+          real-world examples of my work.
         </motion.p>
       </div>
 

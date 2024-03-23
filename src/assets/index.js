@@ -19,11 +19,18 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
 import timhortons from "./company/timhortons.png";
+import IEEE from "./company/IEEE.png";
+import OPS from "./company/OPS.png";
 import xty from "./company/xty.png";
 
 import mealDiary from "./mealDiary.png";
 import incident from "./incident.png";
-import easyVotes from "./easyVotes.png";
+import hr from "./hr.png";
+import php from "./php.png";
+import ps from "./ps.png";
+import illustrator from "./illustrator.png";
+import vuejs from "./vue.png";
+import design from "./design.png";
 
 export {
   backend,
@@ -45,8 +52,15 @@ export {
   typescript,
   threejs,
   timhortons,
+  IEEE,
+  OPS,
   xty,
   mealDiary,
   incident,
-  easyVotes,
+  hr,
+  ps,
+  php,
+  design,
+  illustrator,
+  vuejs,
 };

@@ -14,11 +14,18 @@ import {
   git,
   figma,
   timhortons,
+  IEEE,
+  OPS,
   xty,
   mealDiary,
   incident,
-  easyVotes,
+  hr,
   threejs,
+  ps,
+  php,
+  illustrator,
+  design,
+  vuejs,
 } from "../assets";
 
 export const navLinks = [
@@ -38,11 +45,7 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Java & C#",
-    icon: web,
-  },
-  {
-    title: "JavaScript & React & Angular",
+    title: "JavaScript & Vue.js & React & Angular",
     icon: mobile,
   },
   {
@@ -50,12 +53,21 @@ const services = [
     icon: backend,
   },
   {
-    title: "Agile Software Development",
-    icon: creator,
+    title: "PHP & Java & C#",
+    icon: web,
+  },
+  {
+    title: "Photoshop & Illustrator",
+    icon: design,
   },
 ];
 
 const technologies = [
+  { name: "Vue.js", icon: vuejs },
+  { name: "PHP", icon: php },
+  { name: "Photoshop", icon: ps },
+  { name: "Illustrator", icon: illustrator },
+
   {
     name: "HTML 5",
     icon: html,
@@ -67,10 +79,6 @@ const technologies = [
   {
     name: "JavaScript",
     icon: javascript,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
   },
   {
     name: "React JS",
@@ -90,10 +98,6 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
     name: "git",
     icon: git,
   },
@@ -104,6 +108,17 @@ const technologies = [
 ];
 
 const experiences = [
+  {
+    title: "I&IT Digital Assistant",
+    company_name: "Government of Ontario, Cyber Security Division",
+    icon: OPS,
+    iconBg: "#FFFFFF",
+    date: "September 2023 - Current",
+    points: [
+      "Develop, test, and implement websites using JavaScript, HTML, CSS, Vue.js, and PHP, ensuring adherence to AODA accessibility standards. Maintained websites, addressed bugs, implemented new features.",
+      " Assist in graphic design tasks, utilizing Photoshop and Illustrator to create mock-ups and illustrations for website designs.",
+    ],
+  },
   {
     title: "Customer Service (Part-time)",
     company_name: "Tim Hortons",
@@ -146,7 +161,7 @@ const projects = [
       },
     ],
     image: mealDiary,
-    source_code_link: "https://github.com/COMP231-MealDiary/MealDiary",
+    source_code_link: "https://github.com/Mia-Guoo/MealDiary.git",
   },
   {
     name: "Incident Management",
@@ -171,9 +186,9 @@ const projects = [
       "https://github.com/Mia-Guoo/COMP229-WebGroupProject-Group16",
   },
   {
-    name: "EasyVotes",
+    name: "HR management",
     description:
-      "A Java web application that allows users to vote to decide which facilities the government will build in the city.",
+      "An HR application to manage employees, jobs, and departments using Java and SQL database.                   ",
     tags: [
       {
         name: "Java",
@@ -184,12 +199,12 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "CSS",
+        name: "SQL",
         color: "pink-text-gradient",
       },
     ],
-    image: easyVotes,
-    source_code_link: "https://github.com/Mia-Guoo/EasyVotes",
+    image: hr,
+    source_code_link: "https://github.com/Mia-Guoo/",
   },
 ];
 

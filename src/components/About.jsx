@@ -39,19 +39,32 @@ const About = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
+        <br />
+        <br />
         <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <h3 style={{ color: "black", fontWeight: "500", fontSize: "36px" }}>
+          Overview.
+        </h3>
       </motion.div>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-[#7d5782] text-[20px] max-w-3xl leading-[30px]"
       >
-        A new graduate of the Software Engineering Technician program, skilled
-        in strong software development and programming. Detail-oriented strong
-        Web Development skills, and strong analytical skills. Works well
-        independently or as part of a team. Confident in contributing to team
-        projects and proposing efficient solutions.
+        <ul>
+          <li className="list-disc">
+            Highly skilled with JavaScript, Vue.js, React, HTML, UI/UX, Java,
+            C#, Python, Node.js, Oracle.
+          </li>
+          <li className="list-disc">
+            Highly skilled in Photoshop, Illustrator, Microsoft Office, GitHub,
+            Figma.
+          </li>
+          <li className="list-disc">
+            Well understanding of AODA accessibility standards, excellent at
+            time management, quick learning, and teamwork.
+          </li>
+        </ul>
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
