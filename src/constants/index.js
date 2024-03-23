@@ -14,7 +14,6 @@ import {
   git,
   figma,
   timhortons,
-  IEEE,
   OPS,
   xty,
   mealDiary,

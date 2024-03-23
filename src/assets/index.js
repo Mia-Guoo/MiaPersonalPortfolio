@@ -19,7 +19,6 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
 import timhortons from "./company/timhortons.png";
-import IEEE from "./company/IEEE.png";
 import OPS from "./company/OPS.png";
 import xty from "./company/xty.png";
 
@@ -52,7 +51,6 @@ export {
   typescript,
   threejs,
   timhortons,
-  IEEE,
   OPS,
   xty,
   mealDiary,
